@@ -12,4 +12,12 @@ class Match extends Model
         'round_number',
         'status'
     ];
+    
+    /**
+     * Get the score for the match.
+     */
+    public function scores()
+    {
+        return $this->hasMany('App\Score','match_id', 'id');
+    }
 }

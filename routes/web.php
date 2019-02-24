@@ -20,3 +20,5 @@ Route::resource('teams', 'TeamController');
 Route::resource('groups', 'GroupController');
 
 Route::resource('scores', 'ScoreController');
+
+Route::resource('matches', 'MatchController');
